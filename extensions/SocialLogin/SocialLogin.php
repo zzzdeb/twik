@@ -12,6 +12,12 @@ $dir = dirname(__FILE__) . '/';
  
 global $wgSocialLoginServices;
 
+
+$wgSocialLoginServices = array(
+	'facebook.com' => 'Facebook',
+	'google.com' => 'Google',
+);
+
 // Main SpecialPage class
 $wgAutoloadClasses['SocialLogin'] = $dir . 'SocialLogin.body.php';
 // Plugins classes
@@ -19,6 +25,8 @@ foreach ($wgSocialLoginServices as $key => $value) {
 	$name = str_replace('.', '_', $key);
 	$wgAutoloadClasses[$name] = $dir . "/plugins/$key.php";
 }
+
+$wgSocialLoginOverrideUrls = true;
 // Buttons template class
 $wgAutoloadClasses['SocialLoginButtonsTpl'] = $dir . '/templates/SocialLoginButtonsTpl.php';
 // Signin/signup forms to connect accounts template class
