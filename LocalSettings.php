@@ -51,8 +51,8 @@ $wgEmailAuthentication = true;
 
 ## Database settings
 $wgDBtype = "mysql";
-$wgDBserver = "localhost:56985";
-$wgDBname = "localdb";
+$wgDBserver = "127.0.0.1:56990";
+$wgDBname = "my_wiki";
 $wgDBuser = "azure";
 $wgDBpassword = "6#vWHD_\$";
 
@@ -81,7 +81,7 @@ $wgUseInstantCommons = false;
 # Periodically send a pingback to https://www.mediawiki.org/ with basic data
 # about this MediaWiki instance. The Wikimedia Foundation shares this data
 # with MediaWiki developers to help guide future development efforts.
-$wgPingback = false;
+$wgPingback = true;
 
 ## If you use ImageMagick (or any other shell command) on a
 ## Linux server, this will need to be set to the name of an
@@ -96,14 +96,14 @@ $wgShellLocale = "en_US.utf8";
 # Site language code, should be one of the list in ./languages/data/Names.php
 $wgLanguageCode = "mn";
 
-$wgSecretKey = "97ccdda3e20a2e824d32f29a022328c3f4a17cd484149b857d244f2bae55550f";
+$wgSecretKey = "7f5bed1d2dc82e706bf8f183372418327005024440f5138123a000d51b9ab232";
 
 # Changing this will log out all existing sessions.
 $wgAuthenticationTokenVersion = "1";
 
 # Site upgrade key. Must be set to a string (default provided) to turn on the
 # web installer while LocalSettings.php is in place
-$wgUpgradeKey = "024a8e23c96221c6";
+$wgUpgradeKey = "4c6cb8a47d964a65";
 
 ## For attaching licensing metadata to pages, and displaying an
 ## appropriate copyright notice / icon. GNU Free Documentation
