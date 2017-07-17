@@ -26,6 +26,7 @@ foreach ($wgSocialLoginServices as $key => $value) {
 	$wgAutoloadClasses[$name] = $dir . "/plugins/$key.php";
 }
 
+global $wgSocialLoginOverrideUrls;
 $wgSocialLoginOverrideUrls = true;
 // Buttons template class
 $wgAutoloadClasses['SocialLoginButtonsTpl'] = $dir . '/templates/SocialLoginButtonsTpl.php';
